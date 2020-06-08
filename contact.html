@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!--   Header met Logo en nav + 'zoeken'-->
+        <nav>
+            <ul>
+
+                <li class="logo">
+                    <!--               bron: https://nl.wikipedia.org/wiki/Bestand:ING_Group_N.V._Logo.svg -->
+                    <a alt="inglogo" href="./index.html"><img class="logo" src="./css/images/ING_logo.png"></a>
+                </li>
+                <li>producten</li>
+                <li>advies</li>
+                <li>punten</li>
+
+                <li><a href="./contact.html ">contact</a></li>
+                <li>
+                    <input class="zoeken " type="text " name="zoeken " placeholder="zoeken.. "> </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--       ING banner met titel
+        bron; www.ING.nl-->
+        <h1>Je huis verduurzamen?<a><img class="banner " src="./css/images/Afspraak-op-kantoor_720x384_tcm162-171487.jpg " alt="banner "></a>check het energie label</h1>
+
+        <!--       https://www.ing.com/Contact-form-About-Us.htm-->
+        <h2 class="nieuws ">Contactformulier</h2>
+        <form id="weg" class="formulier">
+            <!--           hier staat het contactforulier-->
+            <fieldset>
+                <legend>Persoonsgegevens</legend>
+                <label for="voornaam">Voornaam:</label>
+
+                <input class="valid" type="voornaam" id="voornaam" name="voornaam">
+
+                <label for="achternaam">Achternaam:</label>
+
+                <input type="achternaam" id="achternaam" name="achternaam">
+
+                <label for="email">Jouw email:</label>
+
+                <input class="valid" type="email" id="email" name="email">
+
+
+                <label for="onderwerp">Onderwerp:</label>
+
+                <input type="onderwerp" id="onderwerp" name="onderwerp">
+
+                <label for="bericht">Jouw bericht:</label>
+
+                <textarea type="bericht" id="bericht" name="bericht" rows="3" cols="50">
+                </textarea>
+
+                <!--De 'Verstuur-knop' met daaraan en class die gelinkt is aan een functie-->
+                <button class="knop" type="button">versturen</button>
+            </fieldset>
+        </form>
+        <!--        Bij het activeren van de functie komt dit tevoorschijn.-->
+        <section id="dankje">
+            <h2 class="nieuws ">Bedankt voor het invullen!
+            <img class="duim" src="./css/images/wikimedia-commons-thumbs.png">
+
+
+                Klik <a href="index.html">hier </a>om terug naar home te gaan. </h2>
+
+
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="pop-up.js"></script>
+
+</body>
+
+</html>

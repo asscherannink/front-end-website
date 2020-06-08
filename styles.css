@@ -1,0 +1,210 @@
+ /* csslint allow: adjoining-classes, known-properties, order-alphabetical  */
+ /*gemiddelde font size is..*/
+
+ html {
+     font-size: 16px;
+ }
+ /*Hier link ik de ING-font uit mijn files met de website*/
+
+ @font-face {
+     font-family: INGmeRegular;
+     src: url(./font/INGMeRegular.ttf);
+ }
+ @font-face {
+     font-family: INGmeBold;
+     src: url(./font/INGMeBold.ttf);
+ }
+ body {
+     /*     geen margin, zodat ik alle vrijheid heb*/
+     margin: 0;
+     padding: 0;
+     background-color: #EBEBEB;
+     font-family: INGmeRegular;
+ }
+ header {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     background-color: white;
+ }
+ .logo {
+     /*     hier verklein in ik he logo*/
+     width: 100px;
+ }
+ ul {
+     list-style-type: none;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 1rem;
+ }
+ .zoeken {
+     width: 100%;
+     margin: 0;
+     box-sizing: border-box;
+     border: 1px solid gray;
+     border-radius: 6px;
+     font-size: 1rem;
+     background-color: white;
+     padding: 5px;
+     box-shadow: 1px 1px 1px #aaaaaa;
+ }
+ h1 {
+     /*     Banner*/
+     font-family: INGmeBold;
+     padding-bottom: 20px;
+     background-color: #FF6200;
+     text-align: center;
+     font-size: 2.5rem;
+     color: white;
+     box-shadow: 1px 5px 1px #aaaaaa;
+ }
+ .banner {
+     object-fit: cover;
+     width: 100%;
+     max-height: 30rem;
+     border-color: #FF6200;
+ }
+ h2,
+ .nieuws {
+     /*     Nieuws*/
+     font-size: 3rem;
+     text-align: center;
+ }
+ h3 {
+     /*     Titel artikelen*/
+     font-family: INGmeBold;
+     font-size: 1.5rem;
+     color: #FF6200;
+ }
+ main {
+     height: auto;
+     /*    font-family: INGme;*/
+ }
+ .nieuwsplaatje {
+     width: 100%;
+ }
+ .grid-container {
+     display: grid;
+     grid-template-columns: auto auto auto;
+     justify-items: center;
+     margin: auto;
+     padding: 20px;
+     grid-column-gap: 20px;
+     grid-row-gap: 20px;
+     border-radius: 15px;
+ }
+ .grid-item {
+     display: inline-block;
+     background-color: rgba(255, 255, 255, 0.8);
+     max-width: 500px;
+     min-width: 350px;
+     padding: 20px;
+     font-size: 1rem;
+     text-align: left;
+     border-radius: 15px;
+     box-shadow: 0px 3px 1px #aaaaaa;
+ }
+ footer {
+     display: block;
+     height: 100px;
+     background-color: darkgrey;
+     margin-top: 3rem;
+ }
+ .formulier {
+     margin: auto;
+     font-size: 1.2rem;
+     max-width: 550px;
+ }
+ input,
+ textarea,
+ fieldset {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     font-size: 1.2rem;
+     border-radius: 6px;
+     background-color: white;
+ }
+ input:focus {
+     background-color: #ffc099;
+ }
+ .knop {
+     outline-style: auto;
+     outline-width: 5px;
+     border-top-color: #ffc099;
+     border-bottom-color: #b34500;
+     font-size: 1.2rem;
+     font-family: INGmeBold;
+     padding: 10px 10px;
+     background: #FF6200;
+     color: white;
+     border-radius: 6px;
+ }
+ .knop:hover {
+     border-color: #FF6200;
+     background-color: white;
+     color: #FF6200;
+ }
+ #dankje {
+     display: none;
+     color: #FF6200;
+     text-align: center;
+     padding: 50px;
+ }
+ .duim {
+     width: 50px;
+ }
+ /*Dit is mobiel*/
+
+ @media only screen and (max-width: 600px) {
+     html {
+         font-size: 0.8rem;
+     }
+     .grid-container {
+         grid-template-columns: auto;
+     }
+     .zoeken {
+         width: 60px;
+     }
+ }
+ /*Dit is tabelt*/
+
+ @media only screen and (min-width: 600px) {
+     html {}
+     .grid-container {
+         grid-template-columns: auto;
+     }
+     .zoeken {
+         width: 80px;
+     }
+ }
+ /*Laptop desktop*/
+
+ @media only screen and (min-width: 992px) {
+     html {
+         font-size: 1rem;
+     }
+     .grid-container {
+         grid-template-columns: auto auto;
+     }
+     .zoeken {
+         width: 100px;
+     }
+     .formulier {
+         max-width: 700px;
+     }
+ }
+ /*large laptop desktop*/
+
+ @media only screen and (min-width: 1200px) {
+     html {
+         font-size: 1rem;
+     }
+     .grid-container {
+         grid-template-columns: auto auto auto;
+     }
+     .formulier {
+         max-width: 1000px;
+     }
+ }
